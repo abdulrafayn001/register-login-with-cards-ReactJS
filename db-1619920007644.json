@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "email": "admin",
+      "password": "admin",
+      "contact": "",
+      "products": {},
+      "id": 1
+    },
+    {
+      "username": "Abdulrafay",
+      "email": "abdulrafay@gmail.com",
+      "password": "4bkvMZ8F9S5da9L",
+      "contact": "123456",
+      "products": {},
+      "id": 2
+    },
+    {
+      "username": "Abdulrafay",
+      "email": "xyz@y.com",
+      "password": "4bkvMZ8F9S5da9L",
+      "contact": "7368211",
+      "id": 3
+    },
+    {
+      "username": "erefd",
+      "email": "fdds@y.com",
+      "password": "4bkvMZ8F9S5da9L",
+      "contact": "7876989",
+      "id": 4
+    },
+    {
+      "username": "Abdulrafay",
+      "email": "ytiti@y.com",
+      "password": "4bkvMZ8F9S5da9L",
+      "contact": "787999869",
+      "id": 5
+    }
+  ]
+}
