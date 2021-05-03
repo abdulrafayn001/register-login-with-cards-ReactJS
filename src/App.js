@@ -13,13 +13,19 @@ class App extends React.Component {
     super(props);
     this.state={
       SignInPage:false,
-      isLogin:false
+      isLogin:false,
+      curruentUserId:0
     }
   }
   goToSignin=()=>{
     if(!this.state.SignInPage){
       this.setState({ SignInPage : true})
     }
+  }
+
+  selectCurrentUser=(id)=>
+  {
+    this.setState({curruentUserId:id})
   }
 
   login=()=>{
@@ -37,28 +43,28 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/">
             <div>
-              {this.state.SignInPage?<SignIn goToSignup={this.goToSignup} isLogin={this.state.isLogin} login={this.login}/>:<SignUp isLogin={this.state.isLogin} goToSignin={this.goToSignin} login={this.login}/>}
+              {this.state.SignInPage?<SignIn goToSignup={this.goToSignup} isLogin={this.state.isLogin} login={this.login} selectCurrentUser={this.selectCurrentUser}/>:<SignUp isLogin={this.state.isLogin} goToSignin={this.goToSignin} login={this.login} selectCurrentUser={this.selectCurrentUser}/>}
             </div>
           </Route>
 
           <Route exact path="/home">
-            <Home/>
+            <Home user_id={this.state.curruentUserId}/>
           </Route>
 
           <Route exact path="/add_product">
-            <AddProduct/>
+            <AddProduct user_id={this.state.curruentUserId}/>
           </Route>
 
           <Route exact path="/product_detail">
-            <ProductDetail/>
+            <ProductDetail user_id={this.state.curruentUserId}/>
           </Route>
 
           <Route exact path="/setting">
-            <Setting/>
+            <Setting user_id={this.state.curruentUserId}/>
           </Route>
 
           <Route exact path="/delete_product">
-            <DeleteProduct/>
+            <DeleteProduct user_id={this.state.curruentUserId}/>
           </Route>
         </Switch>
       </Router>

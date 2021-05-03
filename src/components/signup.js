@@ -38,7 +38,7 @@ class SignUp extends React.Component {
             email:this.state.email,
             password:this.state.password,
             contact:this.state.contact,
-            products:{}
+            products:[]
         }
         console.log(this.state.email)
         console.log(allEmail)

@@ -5,8 +5,24 @@
       "email": "fdds@y.com",
       "password": "123",
       "contact": "034120187891",
-      "products": {},
+      "products": [],
       "id": 1
+    },
+    {
+      "username": "Abdulrafay",
+      "email": "noman@y.com",
+      "password": "123",
+      "contact": "8969869",
+      "products": [],
+      "id": 2
+    },
+    {
+      "username": "kami",
+      "email": "kami@gmail.com",
+      "password": "123",
+      "contact": "123",
+      "products": [],
+      "id": 3
     }
   ]
 }

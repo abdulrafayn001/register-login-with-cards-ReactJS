@@ -9,6 +9,7 @@ class SignIn extends React.Component
         this.state = {
             email:'',
             pwd:'',
+            id:-1,
             data:null
         }
     }
@@ -25,7 +26,8 @@ class SignIn extends React.Component
         event.preventDefault();
         console.log("entered email" +this.state.email);
         let check=this.userAuthentication(this.state.data,this.state.email,this.state.password);
-        if(check===true)
+        this.setState({id:check})
+        if(check!==-1)
         {
             this.props.login();
         }
@@ -33,7 +35,6 @@ class SignIn extends React.Component
         {
             alert("Invalid User")
         }
-
     }
 
     componentDidMount(){
@@ -46,20 +47,15 @@ class SignIn extends React.Component
     {
         let list=[]
         data.map((u)=>{
-            console.log(u.email +" "+email+" "+u.password+" "+password);
-            return (u.email===email && u.password===password)?list.push(true):null
+            return (u.email===email && u.password===password)?list.push(u.id):null;
         })
-        console.log(list)
-        return list.length>0?true:false
+        return list.length===1?list[0]:-1
     }
     render() {
         if(this.props.isLogin) 
         {
-            return <Redirect to={{
-                pathname: "/home",
-                state: { eiamil_id: this.state.email }
-              }}
-               />;
+            this.props.selectCurrentUser(this.state.id)
+            return <Redirect to="/home"/>;
         } 
         return ( 
             <form onSubmit={this.handleSubmit} className={classes.Form}>

@@ -20,10 +20,14 @@ class Navbar extends React.Component {
                     <span></span>
                     </label>
                 </div>
-
-                <div class="nav-links">
-                    <Link to="/home">HOME</Link>
+                {/* <Link to={{pathname:"/home",state:{id:this.props.id}}}>HOME</Link>
                     <Link to="/add_product">ADD PRODUCT</Link>
+                    <Link to="/product_detail">PRODUCT DETAILS</Link>
+                    <Link to="/setting">SETTINGS</Link>
+                    <Link to="/delete_product">DELETE</Link> */}
+                <div class="nav-links">
+                    <Link to={{pathname:"/home", state:{ userid: this.state.id }}}>HOME</Link>
+                    <Link to={{pathname:"/add_product", state:{ userid: this.state.id }}}>ADD PRODUCT</Link>
                     <Link to="/product_detail">PRODUCT DETAILS</Link>
                     <Link to="/setting">SETTINGS</Link>
                     <Link to="/delete_product">DELETE</Link>
