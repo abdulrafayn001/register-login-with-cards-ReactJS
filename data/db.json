@@ -5,7 +5,18 @@
       "email": "fdds@y.com",
       "password": "123",
       "contact": "034120187891",
-      "products": [],
+      "products": [
+        {
+          "name": "jamun",
+          "price": 30,
+          "description": "All is well"
+        },
+        {
+          "name": "amazon",
+          "price": "250",
+          "description": "all things at one place"
+        }
+      ],
       "id": 1
     },
     {
@@ -13,7 +24,13 @@
       "email": "noman@y.com",
       "password": "123",
       "contact": "8969869",
-      "products": [],
+      "products": [
+        {
+          "name": "Book",
+          "price": "200",
+          "description": "very intersting book"
+        }
+      ],
       "id": 2
     },
     {

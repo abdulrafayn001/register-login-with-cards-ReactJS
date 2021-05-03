@@ -13,8 +13,8 @@ class Navbar extends React.Component {
                     </div>
                 </div>
 
-                <div class="nav-btn">
-                    <label for="nav-check">
+                <div className="nav-btn">
+                    <label htmlFor="nav-check">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -25,7 +25,7 @@ class Navbar extends React.Component {
                     <Link to="/product_detail">PRODUCT DETAILS</Link>
                     <Link to="/setting">SETTINGS</Link>
                     <Link to="/delete_product">DELETE</Link> */}
-                <div class="nav-links">
+                <div className="nav-links">
                     <Link to={{pathname:"/home", state:{ userid: this.state.id }}}>HOME</Link>
                     <Link to={{pathname:"/add_product", state:{ userid: this.state.id }}}>ADD PRODUCT</Link>
                     <Link to="/product_detail">PRODUCT DETAILS</Link>

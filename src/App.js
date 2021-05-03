@@ -37,6 +37,11 @@ class App extends React.Component {
       this.setState({ SignInPage : false})
     }
   }
+
+  shouldComponentUpdate()
+  {
+    return this.state.curruentUserId<=0
+  }
   render(){
     return (
       <Router>
