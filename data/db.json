@@ -2,44 +2,32 @@
   "users": [
     {
       "username": "Abdulrafay",
-      "email": "fdds@y.com",
+      "email": "abdulrafayn001@gmail.com",
       "password": "123",
-      "contact": "034120187891",
+      "contact": "090078601",
       "products": [
         {
-          "name": "jamun",
-          "price": 30,
-          "description": "All is well"
+          "name": "Laptop",
+          "price": "20000",
+          "description": "Available in good condition."
         },
         {
-          "name": "amazon",
-          "price": "250",
-          "description": "all things at one place"
+          "name": "Bag",
+          "price": "200",
+          "description": "Not for sale"
+        },
+        {
+          "name": "Mouse",
+          "price": "500",
+          "description": "Best quality"
+        },
+        {
+          "name": "React JS Book",
+          "price": "3000",
+          "description": "All in one"
         }
       ],
       "id": 1
-    },
-    {
-      "username": "Abdulrafay",
-      "email": "noman@y.com",
-      "password": "123",
-      "contact": "8969869",
-      "products": [
-        {
-          "name": "Book",
-          "price": "200",
-          "description": "very intersting book"
-        }
-      ],
-      "id": 2
-    },
-    {
-      "username": "kami",
-      "email": "kami@gmail.com",
-      "password": "123",
-      "contact": "123",
-      "products": [],
-      "id": 3
     }
   ]
 }

@@ -72,3 +72,80 @@
     cursor: pointer;
     
 }
+
+.Card{
+    transition: .5s ease;
+    border-radius: 0;
+    transform: perspective(3em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
+    background-color: rgb(1, 90, 90);
+    color: blanchedalmond;
+    width: 200px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.Card> .Header{
+    border-radius: 0;
+    transition: .5s ease;
+}
+
+
+
+.Card:hover>.CardBody{
+    position: relative;
+        z-index: 0;
+        overflow: hidden;
+        height: 10rem;
+}
+
+.Card:hover {        
+    border-color:darken(teal,0%);
+	 transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.Card:hover>.Header{
+    color: darken(teal,15%);
+      border-color: darken(teal,0%);
+      background-color: lighten(teal,35%);
+}
+
+.Price{
+    position: absolute;
+		bottom: 0;
+		right: 0;
+		background: lightslategray;
+		width: 70px;
+		height: 70px;
+		padding-bottom: 0rem;
+		padding-top: 1.25rem;
+		text-align: center;
+		font-weight: bold;
+		font-family:Georgia, 'Times New Roman', Times, serif;
+		font-size: 1.1rem;
+		border-radius: 5rem;
+		color: white;
+		
+		transform: translate(5px,27.5px) rotate(-9deg);
+      border: 1px dashed wheat;
+      transition: .25s linear;
+      line-height: 1.15;
+}
+
+.Card:hover>.Price {
+    transform: translate(2.5px,17.5px) scale(1.15);
+    transform-origin: center right;
+  }
+
+
+.Card>h1{
+    font-weight: 900;
+	text-transform: uppercase;
+}
+
+.CardsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top: 30px;
+}

@@ -40,9 +40,6 @@ class SignUp extends React.Component {
             contact:this.state.contact,
             products:[]
         }
-        console.log(this.state.email)
-        console.log(allEmail)
-        console.log(allEmail.indexOf("abdulrafayn001@gmail.com"))
         allEmail.indexOf(this.state.email)>-1 ? alert("Email alreday exists"):this.registerUser(user)
         
     }

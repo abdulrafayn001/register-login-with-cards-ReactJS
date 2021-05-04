@@ -53,7 +53,7 @@ class App extends React.Component {
           </Route>
 
           <Route exact path="/home">
-            <Home user_id={this.state.curruentUserId}/>
+            <ProductDetail user_id={this.state.curruentUserId}/>
           </Route>
 
           <Route exact path="/add_product">
@@ -61,7 +61,7 @@ class App extends React.Component {
           </Route>
 
           <Route exact path="/product_detail">
-            <ProductDetail user_id={this.state.curruentUserId}/>
+            <Home user_id={this.state.curruentUserId}/>
           </Route>
 
           <Route exact path="/setting">
